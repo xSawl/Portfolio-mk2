@@ -1,74 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portofolio</title>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio - Jeevan Ramakichenin</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquerries.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Jeevan R</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Jeevan Ramakichenin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Jeevan R</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Jeevan Ramakichenin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expérience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
-    <section id = "profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Jeevan Prophile Picture"/>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Jeevan Ramakichenin" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">Jeevan Ramakichenin</h1>
+        <p class="section__text__p2">Développeur de Jeux Vidéo</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/cv-jeevan-ramakichenin.pdf')">
+            Télécharger CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Infos Contact
+          </button>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Salut, Je suis</p>
-            <h1 class="title"> Jeevan RAMAKICHENIN</h1>
-            <P class="section__text__p2">Game Developer</P>
-            <div class="btn-container">
-                <button
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/CV.pdf')">
-                    Télécharger CV
-                </button>
-                <button
-                    class="btn btn-color-1"
-                    onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="social-container">
-                <img src="./Assets/linkedin.png"
-                alt="Mon profile Linkedin"
-                class="icon"
-                onclick="location.href='https://www.linkedin.com/notifications/?filter=all'"
-                />
-                <img src="./Assets/github.png"
-                alt="Mon GitHub"
-                class="icon"
-                onclick="location.href='https://github.com/xSawl?tab=overview&from=2024-04-01&to=2024-04-30'"
-                />
-            </div>
+        <div id="socials-container">
+          <img src="./assets/linkedin.png" alt="Mon LinkedIn" class="icon" onclick="location.href='https://linkedin.com/in/jeevanramakichenin'" />
+          <img src="./assets/github.png" alt="Mon Github" class="icon" onclick="location.href='https://github.com/jeevanramakichenin'" />
         </div>
+      </div>
     </section>
+    <section id="about">
+      <p class="section__text__p1">En savoir plus sur</p>
+      <h1 class="title">Moi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Expérience" class="icon" />
+              <h3>Expérience</h3>
+              <p>2+ ans <br />Développement de Jeux Vidéo</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Éducation" class="icon" />
+              <h3>Éducation</h3>
+              <p>BUT Informatique<br />IUT d'Orsay, Université Paris Saclay</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionné par la programmation et le design, je vise une carrière en développement de jeux vidéo. Durant mon temps libre, j'apprends continuellement, que ce soit dans le développement de jeux vidéo, le dessin, le montage vidéo, et je suis également sportif. Curieux et sociable, j’aime rencontrer de nouvelles personnes.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+<section id="experience">
+  <p class="section__text__p1">Découvrez mon</p>
+  <h1 class="title">Expérience</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Expériences Professionnelles</h2>
+        <div class="article-container experience-articles">
+          <article>
+            <img src="./assets/checkmark.png" alt="Expérience" class="icon" />
+            <div>
+              <h3>Stage - CEA Paris-Saclay (Juin - Août 2023)</h3>
+              <p>Développement et implémentation de scripts d'automatisation en Python.</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Expérience" class="icon" />
+            <div>
+              <h3>Stage - Conception de base de données (Fév. - Mai 2024)</h3>
+              <p>Conception et implémentation d'une base de données pour la gestion des stocks.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Compétences</h2>
+        <div class="article-container competence-articles">
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>C#</h3>
+              <p>Expérimenté</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>Unity</h3>
+              <p>Expérimenté</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>Python</h3>
+              <p>Expérimenté</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>Photoshop</h3>
+              <p>Intermédiaire</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>Premiere Pro</h3>
+              <p>Intermédiaire</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Compétence" class="icon" />
+            <div>
+              <h3>After Effects</h3>
+              <p>Intermédiaire</p>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+    <section id="projects">
+      <p class="section__text__p1">Parcourez mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Jeu Vidéo 2D sous Unity" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Jeu Vidéo 2D sous Unity</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jeevanramakichenin/unity-2d-game'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://jeevanramakichenin.github.io/unity-2d-game-demo/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Jeu Vidéo 3D sous Unreal Engine 5"
+            class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Jeu Vidéo 3D sous Unreal Engine 5</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jeevanramakichenin/ue5-3d-game'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://jeevanramakichenin.github.io/ue5-3d-game-demo/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Jeu Vidéo 3D sous Unity" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Jeu Vidéo 3D sous Unity</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/jeevanramakichenin/unity-3d-game'">
+                Github
+              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://jeevanramakichenin.github.io/unity-3d-game-demo/'">
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Contactez-moi</p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:r.jeevanpro@gmail.com">r.jeevanpro@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://linkedin.com/in/jeevanramakichenin">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+          <p>07 66 26 05 03</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jeevan Ramakichenin. Tous droits réservés.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
