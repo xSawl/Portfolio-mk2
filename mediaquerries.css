@@ -12,6 +12,18 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .about-containers2 {
+    grid-template-columns: repeat(2, 1fr);  /* 2 colonnes pour les écrans plus petits */
+  }
+}
+
+@media (max-width: 700px) {
+  .about-containers2 {
+    grid-template-columns: 1fr;  /* 1 colonne pour les très petits écrans */
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #desktop-nav {
     display: none;

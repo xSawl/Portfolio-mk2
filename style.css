@@ -210,7 +210,9 @@ section {
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 2rem; /* Hauteur fixe */
+  width: 2rem;  /* Largeur fixe pour correspondre à la hauteur */
+  object-fit: contain; /* Assure que l'image garde ses proportions à l'intérieur du cadre */
 }
 
 /* BUTTONS */
@@ -399,11 +401,20 @@ section {
 
 #projects {
   position: relative;
+  text-align: center;
+}
+
+.about-containers2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* 3 colonnes */
+  gap: 20px;  /* Espace entre les éléments */
+  width: 100%;  /* S'assure que l'espace est bien utilisé */
 }
 
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+  height: auto;   /* Hauteur adaptative en fonction du contenu */
 }
 
 .project-img {
